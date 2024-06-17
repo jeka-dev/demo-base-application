@@ -2,13 +2,15 @@
 
 This repository demonstrates the ability of JeKa to build, dockerize, and publish applications with zero build configurations.
 
-The application is a simple command line displaying managed OpenJDK distributions managed by [foojay-disco](https://foojay.io/today/disco-api-helping-you-to-find-any-openjdk-distribution/).
+Here, we don't create project structure but rely only on the JeKa scripting engine : sources and tests are all located in 
+the *jeka-src* directory, which allow to declare dependencies inside java code.
 
-The code and dependencies that is excluded from the production jar is located under *[_dev](jeka-src/_dev)* package, 
+By convention, *[_dev](jeka-src/_dev)*  package (and its sub-package) contains the code and dependencies that are excluded from the production jar.
 
-Dependencies are declared inside Java code using [specific annotations](jeka-src/app/Main.java).
+This application is a simple command line displaying managed OpenJDK distributions managed by [foojay-disco](https://foojay.io/today/disco-api-helping-you-to-find-any-openjdk-distribution/), 
+by requesting the [foojay-disco rest api](https://api.foojay.io/swagger-ui/).
 
-
+This structure is suitable for small-medium sized application but may be trivially moved to a project structure later on.
 
 ## JeKa commands
 
