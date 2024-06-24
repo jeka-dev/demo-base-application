@@ -3,7 +3,7 @@
 This repository demonstrates the ability of JeKa to build, dockerize, and publish applications with zero build configurations.
 
 Here, we don't create project structure but rely only on the JeKa scripting engine : sources and tests are all located in 
-the *jeka-src* directory, which allow to declare dependencies inside java code.
+the *jeka-src* directory, which allows to declare dependencies inside java code.
 
 By convention, *[_dev](jeka-src/_dev)*  package (and its sub-package) contains the code and dependencies that are excluded from the production jar.
 
