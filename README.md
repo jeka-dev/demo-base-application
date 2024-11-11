@@ -48,7 +48,3 @@ Show info about image
 ```shell
 jeka docker: info
 ```
-Run image
-```shell
-jeka docker: run
-```
