@@ -29,7 +29,7 @@ jeka pack
 
 Run jar
 ```shell
-jeka runJar programArgs="" jvmOptions=""
+jeka runJar programArgs="temurin" jvmOptions=""
 ```
 
 Run jar
