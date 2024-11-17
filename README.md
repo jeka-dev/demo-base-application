@@ -1,19 +1,17 @@
-# Build-less application
+# Projectless Application
 
-This repository demonstrates the ability of JeKa to build, dockerize, and publish applications with zero build configurations.
+This repository demonstrates JeKa's ability to build, dockerize, and publish applications with zero build configurations or project structure.
 
-The application is a simple command line displaying OpenJDK distributions managed by [foojay-disco](https://foojay.io/today/disco-api-helping-you-to-find-any-openjdk-distribution/), 
-by requesting the [foojay-disco rest api](https://api.foojay.io/swagger-ui/).
+The application is a simple command line tool displaying OpenJDK distributions managed by [foojay-disco](https://foojay.io/today/disco-api-helping-you-to-find-any-openjdk-distribution/), by requesting the [foojay-disco REST API](https://api.foojay.io/swagger-ui/).
 
-Here, we don't create project structure but rely only on the JeKa scripting engine : sources and tests are all located in 
-the *jeka-src* directory, which allows to declare dependencies inside java code.
+Here, we don't create a project structure but rely solely on the JeKa scripting engine. Sources and tests are all located in the *jeka-src* directory, which allows declaring dependencies directly in Java code.
 
-By convention, *[_dev](jeka-src/_dev)*  package (and its sub-package) contains the code and dependencies that are excluded from the production jar.
+By convention, the *[_dev](jeka-src/_dev)* package (and its sub-packages) contains code and dependencies that are excluded from the production JAR.
 
-This structure is suitable for small-medium sized application but may be trivially moved to a project structure later on.
+This structure is suitable for small to medium-sized applications but can be trivially moved to a project structure later on.
 
-Note: 
-This application can be trivially moved in a plain project structure without requiering build configuration (only dependencies must be extrnalized in a dependency.txt file).
+**Note:**  
+This application can be easily moved into a plain project structure without requiring build configuration (only dependencies need to be externalized in a `dependency.txt` file).
 
 ## JeKa commands
 
