@@ -13,7 +13,13 @@ This structure is suitable for small to medium-sized applications but can be tri
 **Note:**  
 This application can be easily moved into a plain project structure without requiring build configuration (only dependencies need to be externalized in a `dependency.txt` file).
 
-## JeKa commands
+## Execute Directly the App from this Repo
+
+- Print help: ```jeka -r https://github.com/jeka-dev/demo-base-application -p --help```
+- Print available distros: ```jeka -r https://github.com/jeka-dev/demo-base-application -p --distrib```
+- Print temurin versions: ```jeka -r https://github.com/jeka-dev/demo-base-application -p temurin```
+
+## Build Commands
 
 Execute tests
 ```shell
