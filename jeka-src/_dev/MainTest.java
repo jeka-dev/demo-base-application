@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-@JkDep("org.junit.jupiter:junit-jupiter:5.10.2")
+@JkDep("org.junit.jupiter:junit-jupiter:6.1.3")
 class MainTest {
 
     private static final PrintStream OUT = System.out;;

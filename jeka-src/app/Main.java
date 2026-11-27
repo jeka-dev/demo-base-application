@@ -3,7 +3,7 @@ package app;
 import dev.jeka.core.tool.JkDep;
 
 @JkDep("com.sun.jersey:jersey-client:1.19.4")
-@JkDep("com.google.code.gson:gson:2.11.0")
+@JkDep("com.google.code.gson:gson:2.15.0")
 public class Main {
 
 
