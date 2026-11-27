@@ -1,9 +1,9 @@
 package app;
 
-import dev.jeka.core.tool.JkInjectClasspath;
+import dev.jeka.core.tool.JkDep;
 
-@JkInjectClasspath("com.sun.jersey:jersey-client:1.19.4")
-@JkInjectClasspath("com.google.code.gson:gson:2.11.0")
+@JkDep("com.sun.jersey:jersey-client:1.19.4")
+@JkDep("com.google.code.gson:gson:2.15.0")
 public class Main {
 
 
@@ -11,8 +11,8 @@ public class Main {
         if (args.length == 0 || args[0].equals("--help")) {
             System.out.println("List available versions for a given Java distribution");
             System.out.println("Usage: '[distrib_name]' to list versions of Java distribution");
-            System.out.println("or      '--distrib' for displaying available distributions.e");
-            System.out.println("or      ' --help' for displaying this help message");
+            System.out.println("or      '--distrib' for displaying available distributions.");
+            System.out.println("or      '--help' for displaying this help message");
             return;
         }
         if (args[0].equals("--distrib")) {
