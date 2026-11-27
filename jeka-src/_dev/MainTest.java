@@ -1,7 +1,7 @@
 package _dev;
 
 import app.Main;
-import dev.jeka.core.tool.JkInjectClasspath;
+import dev.jeka.core.tool.JkDep;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-@JkInjectClasspath("org.junit.jupiter:junit-jupiter:5.10.2")
+@JkDep("org.junit.jupiter:junit-jupiter:5.10.2")
 class MainTest {
 
     private static final PrintStream OUT = System.out;;

@@ -1,9 +1,9 @@
 package app;
 
-import dev.jeka.core.tool.JkInjectClasspath;
+import dev.jeka.core.tool.JkDep;
 
-@JkInjectClasspath("com.sun.jersey:jersey-client:1.19.4")
-@JkInjectClasspath("com.google.code.gson:gson:2.11.0")
+@JkDep("com.sun.jersey:jersey-client:1.19.4")
+@JkDep("com.google.code.gson:gson:2.11.0")
 public class Main {
 
 
